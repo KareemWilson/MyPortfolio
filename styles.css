@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+/* navBar */
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: rgb(116, 116, 126);
+    font-size: 25px;
+    justify-content: center; 
+
+}
+
+li {
+    background-color: bisque;
+    padding: 1%;
+}
+
+/* the whole content */ 
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./utils/pexels-hasan-albari-1229861.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-section > * {
+    margin-top: 2%;
+color: aliceblue;}
