@@ -31,6 +31,11 @@ li {
     color: aliceblue;
 }
 
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 /* the whole content */ 
 
 .content {
@@ -60,3 +65,14 @@ li {
 .welcome-section > * {
     margin-top: 5%;
 color: aliceblue;}
+
+.title {
+    font-size: 8vh;
+    color: rgb(157, 108, 68);
+}
+
+.subTitle {
+}
+
+.bio {
+}
