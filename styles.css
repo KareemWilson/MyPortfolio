@@ -1,7 +1,11 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 * {
@@ -23,7 +27,7 @@ ul {
   flex-direction: row;
   list-style: none;
   /* font-size: 25px; */
-  font-weight:500;
+  font-weight: 500;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -32,15 +36,13 @@ ul {
 
 li {
   padding: 1%;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 a {
   text-decoration: none;
-  color: #172B4D;
+  color: #172b4d;
 }
-
-
 
 /* the whole content */
 
@@ -57,8 +59,6 @@ a {
   background-size: 1970px 1100px;
   background-attachment: fixed;
   background-position-y: top;
-
-
 }
 
 .welcome-section {
@@ -70,7 +70,8 @@ a {
   padding-left: 10%;
   max-width: 90%;
   padding-right: 10%;
-margin-top: 15%;}
+  margin-top: 15%;
+}
 
 .welcome-section > * {
   margin-top: 15px;
@@ -78,15 +79,15 @@ margin-top: 15%;}
 
 .title {
   font-size: 60px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .subTitle {
-  color: #36B37E;
+  color: #36b37e;
 }
 
 .bio {
-  color: #172B4D;
+  color: #172b4d;
   font-weight: 200;
   max-width: 70%;
   text-align: center;
@@ -104,14 +105,12 @@ margin-top: 15%;}
 }
 
 .fa:hover {
-  opacity: .8;
-  color: #36B37E;
+  opacity: 0.8;
+  color: #36b37e;
 }
 
-
-
 @media (max-width: 710px) {
-  .nav-item{
+  .nav-item {
     display: none;
   }
 
@@ -126,17 +125,17 @@ margin-top: 15%;}
   .title {
     margin-top: 80px;
     font-size: 50px;
-    color: #172B4D;
+    color: #172b4d;
   }
-  
+
   .subTitle {
-    color: #36B37E;
+    color: #36b37e;
     font-size: 25px;
     text-align: start;
   }
 
   .bio {
-    text-align:start;
+    text-align: start;
     max-width: 100%;
   }
 }
