@@ -40,6 +40,8 @@ a {
   color: #172B4D;
 }
 
+
+
 /* the whole content */
 
 .content {
@@ -72,8 +74,6 @@ margin-top: 15%;}
 
 .welcome-section > * {
   margin-top: 15px;
-  color: aliceblue;
-  align-self: center;
 }
 
 .title {
@@ -103,16 +103,46 @@ margin-top: 15%;}
   margin-left: 15px;
 }
 
+.fa:hover {
+  opacity: .8;
+  color: #36B37E;
+}
+
 
 
 @media (max-width: 710px) {
-  .nav-list {
+  .nav-item{
     display: none;
   }
 
-  .bio {
-    text-align:left;
-    max-width: 100%;
+  .fa-bars {
+    display: inline-block;
+    font-size: 50px;
+  }
+  ul {
+    justify-content: flex-end;
+  }
 
+  .title {
+    margin-top: 80px;
+    font-size: 50px;
+    color: #172B4D;
+  }
+  
+  .subTitle {
+    color: #36B37E;
+    font-size: 25px;
+    text-align: start;
+  }
+
+  .bio {
+    text-align:start;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 710px) {
+  .fa-bars {
+    display: none;
   }
 }
