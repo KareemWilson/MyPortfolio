@@ -68,11 +68,10 @@ a {
   padding-left: 10%;
   max-width: 90%;
   padding-right: 10%;
-  padding-top: 15%;
-}
+margin-top: 15%;}
 
 .welcome-section > * {
-  margin-top: 2%;
+  margin-top: 15px;
   color: aliceblue;
   align-self: center;
 }
@@ -91,5 +90,29 @@ a {
   font-weight: 200;
   max-width: 70%;
   text-align: center;
+}
 
+.socials {
+  display: flex;
+  margin-top: 50px;
+}
+
+.fa {
+  justify-content: space-between;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+
+
+@media (max-width: 710px) {
+  .nav-list {
+    display: none;
+  }
+
+  .bio {
+    text-align:left;
+    max-width: 100%;
+
+  }
 }
