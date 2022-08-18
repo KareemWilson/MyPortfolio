@@ -16,11 +16,12 @@
 
 .bg {
   background-image: url(./utils/Header-llustration-desktop@2x.png);
-  background-size: 100% 100%;
-  height: 110vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: -59px;
+    background-size: 98% 100%;
+    height: 107vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -59px;
+    background-position-x: 37px;
 }
 
 /* header */
@@ -131,6 +132,8 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: 58px;
+    background-position-x: 0px;
+
   }
 
   .header {
