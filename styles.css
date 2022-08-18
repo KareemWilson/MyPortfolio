@@ -1,18 +1,9 @@
 @import url("https://rsms.me/inter/inter.css");
 
-html {
-  font-family: "Inter", sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: "Inter var", sans-serif;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -119,7 +110,7 @@ a {
     display: inline-block;
     font-size: 50px;
   }
-  
+
   ul {
     justify-content: flex-end;
   }
