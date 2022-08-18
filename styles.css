@@ -12,22 +12,22 @@
   justify-content: center;
   align-content: center;
 }
+
 body {
   background-image: url(./utils/Header-llustration-desktop@2x.png);
-  height: 100vh;
   background-size: cover;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
+  background-position-y: -61px;
 }
 
 .background {
-
   position: absolute;
-width: 1472.8px;
-height: 1434.3px;
-left: 27px;
-top: -398px;
-
+  width: 1472.8px;
+  height: 1434.3px;
+  left: 27px;
+  top: -398px;
 }
 /* header */
 
@@ -51,7 +51,6 @@ top: -398px;
   align-items: center;
   text-align: center;
   color: #28352f;
-
 }
 
 ul {
@@ -91,7 +90,6 @@ a {
   max-width: 90%;
   padding-right: 10%;
   margin-top: 91px;
-  
 }
 
 .title {
@@ -103,7 +101,6 @@ a {
 .subTitle {
   color: #36b37e;
   text-align: center;
-
 }
 
 .bio {
@@ -116,7 +113,6 @@ a {
   margin-top: 20px;
   text-align: center;
   color: #172b4d;
-
 }
 
 .socials {
@@ -145,7 +141,7 @@ a {
     background-position: center;
   }
 
-  .header{
+  .header {
     justify-content: space-between;
   }
   .nav-item {
