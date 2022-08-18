@@ -13,7 +13,27 @@
   align-content: center;
 }
 
-/* navBar */
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  margin-left: 2vh;
+  width: 90px;
+  height: 28px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  color: #28352f;
+}
 
 ul {
   display: flex;
@@ -21,8 +41,6 @@ ul {
   list-style: none;
   font-weight: 500;
   justify-content: center;
-  position: fixed;
-  top: 0;
   width: 100%;
 }
 
@@ -38,14 +56,18 @@ a {
 
 /* the whole content */
 
-.content {
+.welcome-section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
+  font-size: 30px;
+  padding-left: 10%;
+  max-width: 90%;
+  padding-right: 10%;
   background-image: url(./utils/Header-llustration-desktop@2x.png);
   height: 100vh;
-  width: 100%;
+  width: 80%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 1970px 1100px;
@@ -53,24 +75,8 @@ a {
   background-position-y: top;
 }
 
-.welcome-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  padding-left: 10%;
-  max-width: 90%;
-  padding-right: 10%;
-  margin-top: 15%;
-}
-
-.welcome-section > * {
-  margin-top: 15px;
-}
-
 .title {
-  font-size: 60px;
+  padding-top: 100px;
   color: #172b4d;
 }
 
@@ -79,10 +85,15 @@ a {
 }
 
 .bio {
-  color: #172b4d;
-  font-weight: 200;
-  max-width: 70%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 60%;
+  margin-top: 20px;
   text-align: center;
+  color: #172b4d;
 }
 
 .socials {
@@ -94,6 +105,7 @@ a {
   justify-content: space-between;
   margin-right: 15px;
   margin-left: 15px;
+  color: #505f79;
 }
 
 .fa:hover {
@@ -106,25 +118,27 @@ a {
     display: none;
   }
 
+  .logo {
+    display: flex;
+  }
+
   .fa-bars {
-    display: inline-block;
-    font-size: 50px;
+    display: flex;
+    font-size: 18px;
+    padding-top: 8px;
   }
 
   ul {
     justify-content: flex-end;
   }
 
-  .title {
-    margin-top: 80px;
-    font-size: 50px;
-    color: #172b4d;
-  }
-
-  .subTitle {
-    color: #36b37e;
-    font-size: 25px;
-    text-align: start;
+  .title .subTitle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
   }
 
   .bio {
