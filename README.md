@@ -50,4 +50,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [Kareem wilson](https://github.com/KareemWilson) licensed.
+This project is [MIT](./LICENSE) licensed.
