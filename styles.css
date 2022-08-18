@@ -1,0 +1,183 @@
+@import url("https://rsms.me/inter/inter.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+body {
+  background-image: url(./utils/Header-llustration-desktop@2x.png);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -61px;
+}
+
+.background {
+  position: absolute;
+  width: 1472.8px;
+  height: 1434.3px;
+  left: 27px;
+  top: -398px;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding-top: 13px;
+  justify-content: center;
+}
+
+.logo {
+  margin-left: 2vh;
+  width: 90px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  color: #28352f;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: fit-content;
+}
+
+li {
+  padding: 0% 6% 0% 6%;
+  color: #172b4d;
+  font-size: 15px;
+  font-weight: 600;
+  top: 500em;
+}
+
+a {
+  text-decoration: none;
+  color: #172b4d;
+}
+
+/* the whole content */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 30px;
+  padding-left: 10%;
+  max-width: 90%;
+  padding-right: 10%;
+  margin-top: 91px;
+}
+
+.title {
+  padding-top: 100px;
+  color: #172b4d;
+  text-align: center;
+}
+
+.subTitle {
+  color: #36b37e;
+  text-align: center;
+}
+
+.bio {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 60%;
+  margin-top: 20px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.socials {
+  display: flex;
+  margin-top: 50px;
+}
+
+.fa {
+  justify-content: space-between;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #505f79;
+}
+
+.fa:hover {
+  opacity: 0.8;
+  color: #36b37e;
+}
+
+@media (max-width: 710px) {
+  body {
+    background-image: url(./utils/header-illsutration-mobile@2x.png);
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .fa-bars {
+    display: flex;
+    font-size: 18px;
+    padding-top: 8px;
+  }
+
+  ul {
+    justify-content: flex-end;
+  }
+
+  .title .subTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .bio {
+    text-align: center;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 710px) {
+  .fa-bars {
+    display: none;
+  }
+}
