@@ -29,6 +29,7 @@ body {
   left: 27px;
   top: -398px;
 }
+
 /* header */
 
 .header {
@@ -42,7 +43,6 @@ body {
   margin-left: 2vh;
   width: 90px;
   height: 28px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -67,7 +67,6 @@ ul {
 li {
   padding: 0% 6% 0% 6%;
   color: #172b4d;
-  font-family: "Inter";
   font-size: 15px;
   font-weight: 600;
   top: 500em;
@@ -144,6 +143,7 @@ a {
   .header {
     justify-content: space-between;
   }
+
   .nav-item {
     display: none;
   }
@@ -163,7 +163,6 @@ a {
   }
 
   .title .subTitle {
-    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
