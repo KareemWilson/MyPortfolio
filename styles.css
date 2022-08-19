@@ -13,15 +13,14 @@
   align-content: center;
 }
 
-
 .bg {
   background-image: url(./utils/Header-llustration-desktop@2x.png);
-    background-size: 98% 100%;
-    height: 107vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: -59px;
-    background-position-x: 37px;
+  background-size: 98% 100%;
+  height: 107vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -59px;
+  background-position-x: 37px;
 }
 
 /* header */
@@ -83,7 +82,6 @@ a {
   max-width: 90%;
   padding-right: 10%;
   padding-top: 3%;
-
 }
 
 .title {
@@ -125,15 +123,62 @@ a {
   color: #36b37e;
 }
 
+/* Works-Section */
+
+/*this is the grid container */
+.worksTitle {
+  grid-column: 1/4;
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 24px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.projects-list > * {
+  background-color: white;
+}
+
+/*project card */
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  height: 474px;
+  width: 369px;
+  border: 1px solid #EBF0EE;
+  border-radius: 8px;
+}
+
+.cardTop {
+  flex: 1;
+  background-color: #d0d9d4;
+  border-radius: 8px 8px 0 0;
+}
+
+.cardBottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 10px 10px 10px;
+  background-color: white;
+  align-self: center;
+align-items: center;}
+
+.tech {
+  background-color: grey;
+}
+
 @media (max-width: 710px) {
-  
   .bg {
     background-image: url(./utils/header-illsutration-mobile@2x.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: 58px;
     background-position-x: 0px;
-
   }
 
   .header {
