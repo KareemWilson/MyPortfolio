@@ -246,10 +246,11 @@ a {
 /* About ME Section */
 
 .aboutme-section {
-  background-image: url(./utils/icons/aboutme1desktop.svg), url(./utils/icons/aboutme2desktop.svg);
+  background-image: url(./utils/icons/aboutme1desktop.svg),
+    url(./utils/icons/aboutme2desktop.svg);
   background-repeat: no-repeat no-repeat;
   background-position: right bottom, left top;
-  background-position-y: 53px , 215px;
+  background-position-y: 53px, 215px;
 }
 
 .aboutHeader {
@@ -340,25 +341,12 @@ a {
     height: 100vh;
   }
 
-  .aboutbg1 {
-    display: none;
-  }
-
-  .aboutbg2 {
-    display: none;
-  }
-
-  .aboutbg1mobile {
-    display: block;
-    position: absolute;
-    right: -10px;
-  }
-
-  .aboutbg2mobile {
-    display: block;
-    position: absolute;
-    left: -10px;
-    bottom: -3581px;
+  .aboutme-section {
+    background-image: url(./utils/icons/aboutmemobile1.svg),
+      url(./utils/icons/aboutme2mobile.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: right bottom, left top;
+    background-position-y: -21px, 326px;
   }
 
   .header {
@@ -428,6 +416,7 @@ a {
   .aboutHeader {
     margin-top: 40px;
     max-width: 88%;
+    z-index: -1;
   }
 
   .aboutHeader > .sectionTitle {
