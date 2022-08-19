@@ -245,6 +245,13 @@ a {
 
 /* About ME Section */
 
+.aboutme-section {
+  background-image: url(./utils/icons/aboutme1desktop.svg), url(./utils/icons/aboutme2desktop.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: right bottom, left top;
+  background-position-y: 53px , 215px;
+}
+
 .aboutHeader {
   grid-column: 1/4;
   margin-top: 150px;
