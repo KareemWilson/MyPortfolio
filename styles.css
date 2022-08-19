@@ -246,7 +246,8 @@ a {
 /* About ME Section */
 
 .aboutme-section {
-  background-image: url(./utils/icons/aboutme1desktop.svg),
+  background-image:
+    url(./utils/icons/aboutme1desktop.svg),
     url(./utils/icons/aboutme2desktop.svg);
   background-repeat: no-repeat no-repeat;
   background-position: right bottom, left top;
@@ -342,7 +343,8 @@ a {
   }
 
   .aboutme-section {
-    background-image: url(./utils/icons/aboutmemobile1.svg),
+    background-image:
+      url(./utils/icons/aboutmemobile1.svg),
       url(./utils/icons/aboutme2mobile.svg);
     background-repeat: no-repeat no-repeat;
     background-position: right bottom, left top;
