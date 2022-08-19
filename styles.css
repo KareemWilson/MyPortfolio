@@ -126,14 +126,14 @@ a {
 /* Works-Section */
 
 /*this is the grid container */
-.worksTitle {
+.sectionTitle {
   grid-column: 1/4;
   font-size: 40px;
   font-weight: 700;
   color: #172B4D;
   margin-bottom: 13px;
 }
-.projects-list {
+.section-container {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 24px;
@@ -142,7 +142,7 @@ a {
   margin-bottom: 50px;
 }
 
-.projects-list > * {
+.section-container > * {
   background-color: white;
 }
 
@@ -208,6 +208,8 @@ a {
 }
 
 .btn {
+  grid-column: 3/4;
+
   padding: 12px;
   background-color: #36B37F;
   color: white;
@@ -223,6 +225,61 @@ a {
   box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
   cursor: pointer;
 }
+
+
+/* About ME Section */ 
+
+.bioAboutme {
+  grid-column: 1/4;
+  
+}
+
+.resumeBtn {
+  grid-column: 1/4;
+}
+
+.technologyCard {
+  display: flex;
+  height: 352px;
+  width: 369px;
+  border: 1px solid #C1C7D0;
+  background-color: #EBF0EE;
+  flex-direction: column;
+  border-radius: 8px;
+  align-self: center;
+  align-items: center;
+}
+
+.technologyCard > .cardTitle {
+  max-width: 70%;
+  color: #172b4d;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 7px;
+  margin-top: 34px ;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.listItem {
+  background-color: white;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 12px;
+  color: #36B37E;
+  border-radius: 8px;
+  margin: 7px;
+}
+
 
 
 
@@ -275,8 +332,8 @@ a {
   }
 
 
-  /* work section in mob view */ 
-  .worksTitle {
+  /* Sections section in mob view */ 
+  .sectionTitle {
     max-width: 70%;
   }
 
@@ -287,7 +344,7 @@ a {
   border-radius: 24px;
   align-self: center;
   }
-  .projects-list {
+  .section-container {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -298,6 +355,11 @@ a {
 
   .projectCard {
     max-width: 88%
+  }
+
+  .technologyCard {
+    max-width: 88%
+
   }
 
 }
