@@ -11,6 +11,9 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  background-image:url(./utils/icons/illustration\ about\ me\ desktopall.svg) ;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .bg {
@@ -131,7 +134,7 @@ a {
   font-size: 40px;
   font-weight: 700;
   color: #172B4D;
-  margin-bottom: 13px;
+  margin-bottom: 20px;
 }
 .section-container {
   display: grid;
@@ -140,6 +143,7 @@ a {
   text-align: center;
   justify-content: center;
   margin-bottom: 50px;
+  justify-items: center;
 }
 
 .section-container > * {
@@ -208,8 +212,6 @@ a {
 }
 
 .btn {
-  grid-column: 3/4;
-
   padding: 12px;
   background-color: #36B37F;
   color: white;
@@ -229,13 +231,38 @@ a {
 
 /* About ME Section */ 
 
+.aboutHeader {
+  grid-column: 1/4;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  
+}
 .bioAboutme {
   grid-column: 1/4;
+    max-width: 803px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #42526E;
   
 }
 
 .resumeBtn {
   grid-column: 1/4;
+  padding: 12px;
+  background-color: #36B37F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.resumeBtn:hover {
+  background: #18764f;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  cursor: pointer;
 }
 
 .technologyCard {
@@ -355,6 +382,18 @@ a {
 
   .projectCard {
     max-width: 88%
+  }
+
+  /* about section on mobile */ 
+
+  .aboutHeader {
+    margin-top: 40px;
+    max-width: 88%;
+
+  }
+
+  .aboutHeader > .sectionTitle {
+    max-width: 100%;
   }
 
   .technologyCard {
