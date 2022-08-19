@@ -11,9 +11,6 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background-image:url(./utils/icons/illustration\ about\ me\ desktopall.svg) ;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .bg {
@@ -25,6 +22,29 @@
   background-position-y: -59px;
   background-position-x: 37px;
 }
+
+
+
+.aboutbg1 {
+  position: absolute;
+  right: -10px;
+}
+
+.aboutbg2 {
+  position: absolute;
+  left:-10px;
+  bottom: -1610px;
+}
+
+.aboutbg1mobile {
+  display: none;
+}
+
+.aboutbg2mobile {
+  display: none;
+}
+
+
 
 /* header */
 
@@ -103,7 +123,7 @@ a {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  max-width: 60%;
+  max-width: 48%;
   margin-top: 20px;
   text-align: center;
   color: #172b4d;
@@ -320,6 +340,27 @@ a {
     background-position-y: 58px;
     background-position-x: 0px;
     height: 100vh;
+  }
+
+  .aboutbg1 {
+    display: none;
+  }
+  
+  .aboutbg2 {
+    display: none;
+  }
+
+  .aboutbg1mobile {
+    display: block;
+    position: absolute;
+    right: -10px;
+  }
+  
+  .aboutbg2mobile {
+    display: block;
+    position: absolute;
+    left: -10px;
+    bottom: -3581px;
   }
 
   .header {
