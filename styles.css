@@ -128,6 +128,10 @@ a {
 /*this is the grid container */
 .worksTitle {
   grid-column: 1/4;
+  font-size: 40px;
+  font-weight: 700;
+  color: #172B4D;
+  margin-bottom: 13px;
 }
 .projects-list {
   display: grid;
@@ -175,6 +179,13 @@ a {
   max-width: 70%;
   margin: 16px;
   color: #172b4d;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.border {
+  grid-column: 2/4;
+  
 }
 
 .techs {
@@ -213,6 +224,10 @@ a {
   cursor: pointer;
 }
 
+
+
+/* mobile view */ 
+
 @media (max-width: 710px) {
   .bg {
     background-image: url(./utils/header-illsutration-mobile@2x.png);
@@ -220,6 +235,7 @@ a {
     background-repeat: no-repeat;
     background-position-y: 58px;
     background-position-x: 0px;
+    height: 100vh;
   }
 
   .header {
@@ -257,7 +273,36 @@ a {
     max-width: 100%;
     margin-top: 50px;
   }
+
+
+  /* work section in mob view */ 
+  .worksTitle {
+    max-width: 70%;
+  }
+
+  .border {
+    width: 48px;
+  height: 4px;
+  background-color: #36B37E;
+  border-radius: 24px;
+  align-self: center;
+  }
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .projectCard {
+    max-width: 88%
+  }
+
 }
+
+
 
 @media (min-width: 710px) {
   .fa-bars {
