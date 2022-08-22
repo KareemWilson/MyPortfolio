@@ -224,6 +224,8 @@ a {
   padding: 8px 12px 8px 12px;
   color: #172b4d;
   border-radius: 8px;
+  float: right;
+  margin-left: 12px;
 }
 
 .btn {
