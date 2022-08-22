@@ -227,6 +227,9 @@ a {
   float: right;
   margin-left: 12px;
 }
+li.tech {
+  margin-left: 0;
+}
 
 .btn {
   padding: 12px;
