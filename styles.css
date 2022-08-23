@@ -454,7 +454,7 @@ a {
     justify-content: center;
     gap: 24px;
   }
-  
+
   .contact-container > ul li {
     list-style: none;
     width: 100%;
@@ -509,6 +509,7 @@ a {
     padding-bottom: 50px;
     font-weight: 400;
     font-size: 20px;
+    color: #42526E;
   }
 }
 
