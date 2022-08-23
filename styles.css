@@ -434,6 +434,7 @@ a {
 
   .contact-section {
     padding: 24px;
+    margin-bottom: 64px;
     background-image: url(./utils/illustration-contact-form.svg);
     background-repeat: no-repeat;
     background-position-x: 334px;
