@@ -434,16 +434,23 @@ a {
 
   /* contact section on mobile */ 
 
+  .contact-section {
+    margin: 24px;
+  }
+
   .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
   }
 
   .contact-container > ul li {
     list-style: none;
+    width: 100%;
+    margin-bottom: 24px;
   }
 
   .full-name, .email {
@@ -452,6 +459,26 @@ a {
     border-radius: 4px;
     border: 1px solid #D0D9D4;;
   }
+
+  .message-input {
+    max-width: 327px;
+    min-width: 327px;
+    height: 114px;
+  }
+
+    
+  .contact-container .sectionTitle {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .fields li {
+    padding: 0;
+  }
+
+
+  
 }
 
 @media (min-width: 710px) {
