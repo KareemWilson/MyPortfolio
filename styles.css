@@ -223,7 +223,7 @@ a {
   font-size: 12px;
   padding: 8px 12px 8px 12px;
   color: #172b4d;
-  border-radius: 8px;  
+  border-radius: 8px;
 }
 
 .btn {
@@ -246,8 +246,7 @@ a {
 /* About ME Section */
 
 .aboutme-section {
-  background-image:
-    url(./utils/icons/aboutme1desktop.svg),
+  background-image: url(./utils/icons/aboutme1desktop.svg),
     url(./utils/icons/aboutme2desktop.svg);
   background-repeat: no-repeat no-repeat;
   background-position: right bottom, left top;
@@ -343,8 +342,7 @@ a {
   }
 
   .aboutme-section {
-    background-image:
-      url(./utils/icons/aboutmemobile1.svg),
+    background-image: url(./utils/icons/aboutmemobile1.svg),
       url(./utils/icons/aboutme2mobile.svg);
     background-repeat: no-repeat no-repeat;
     background-position: right bottom, left top;
@@ -429,12 +427,11 @@ a {
     max-width: 88%;
   }
 
-
-  /* contact section on mobile */ 
+  /* contact section on mobile */
 
   .contact-section {
     padding: 24px;
-    margin-bottom: 64px;
+    padding-bottom: 75px;
     background-image: url(./utils/illustration-contact-form.svg);
     background-repeat: no-repeat;
     background-position-x: 334px;
@@ -457,18 +454,20 @@ a {
     justify-content: center;
     gap: 24px;
   }
+  
   .contact-container > ul li {
     list-style: none;
     width: 100%;
   }
 
-  .contact-container > .socials { 
+  .contact-container > .socials {
     margin-top: 0;
   }
 
-  .full-name, .email {
+  .full-name,
+  .email {
     border-radius: 4px;
-    border: 1px solid #D0D9D4;;
+    border: 1px solid #d0d9d4;
     padding: 15px;
     width: 327px;
     box-sizing: border-box;
@@ -480,11 +479,10 @@ a {
     height: 114px;
     box-sizing: border-box;
     padding: 15px;
-    border: 1px solid #60C095;
+    border: 1px solid #60c095;
     border-radius: 4px;
   }
 
-    
   .contact-container .sectionTitle {
     padding: 0;
     margin: 0;
@@ -495,8 +493,23 @@ a {
     padding: 0;
   }
 
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
 
-  
+  .links > .socials {
+    margin-top: 0;
+  }
+
+  .myemail {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-weight: 400;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 710px) {
