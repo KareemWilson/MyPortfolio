@@ -433,7 +433,11 @@ a {
   /* contact section on mobile */ 
 
   .contact-section {
-    margin: 24px;
+    padding: 24px;
+    background-image: url(./utils/illustration-contact-form.svg);
+    background-repeat: no-repeat;
+    background-position-x: 334px;
+    background-position-y: 706px;
   }
 
   .contact-container {
@@ -455,6 +459,10 @@ a {
   .contact-container > ul li {
     list-style: none;
     width: 100%;
+  }
+
+  .contact-container > .socials { 
+    margin-top: 0;
   }
 
   .full-name, .email {
