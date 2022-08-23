@@ -223,9 +223,7 @@ a {
   font-size: 12px;
   padding: 8px 12px 8px 12px;
   color: #172b4d;
-  border-radius: 8px;
-  float: right;
-  margin-left: 12px;
+  border-radius: 8px;  
 }
 
 .btn {
@@ -445,25 +443,36 @@ a {
     justify-content: center;
     text-align: center;
     width: 100%;
+    gap: 58px;
   }
 
+  .fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+  }
   .contact-container > ul li {
     list-style: none;
     width: 100%;
-    margin-bottom: 24px;
   }
 
   .full-name, .email {
-    height: 48px;
-    width: 327px;
     border-radius: 4px;
     border: 1px solid #D0D9D4;;
+    padding: 15px;
+    width: 327px;
+    box-sizing: border-box;
   }
 
   .message-input {
     max-width: 327px;
     min-width: 327px;
     height: 114px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #60C095;
+    border-radius: 4px;
   }
 
     
