@@ -320,7 +320,7 @@ a {
 
 /*
 ---------------------------------------------------
-mobile view 
+mobile view
 -------------------------------------------------- */
 @media (max-width: 600px) {
   .bg {
@@ -605,7 +605,7 @@ mobile view
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    padding: 13px 0px 21px 0px;
+    padding: 13px 1px 21px 1px;
     border-top: 2px solid #dfe1e6;
   }
 
