@@ -23,7 +23,6 @@
   background-position-x: 37px;
 }
 
-
 /* header
 ----------------------------------------------------------------- */
 
@@ -321,9 +320,8 @@ a {
 
 /*
 ---------------------------------------------------
- mobile view 
---------------------------------------------------*/
-
+mobile view 
+-------------------------------------------------- */
 @media (max-width: 600px) {
   .bg {
     background-image: url(./utils/header-illsutration-mobile@2x.png);
@@ -525,13 +523,12 @@ a {
     padding-top: 140px;
     padding-bottom: 209px;
     background-image:
-    url(./utils/contact\ 3.svg),
-    url(./utils/contact\ 2.svg),
-    url(./utils/contact\ 1.svg);
+      url(./utils/contact\ 3.svg),
+      url(./utils/contact\ 2.svg),
+      url(./utils/contact\ 1.svg);
     background-repeat: no-repeat;
     background-position: right, 503px, left;
     background-position-y: 180px, 444px, 311px;
-
   }
 
   .contact-container {
@@ -542,7 +539,6 @@ a {
     text-align: center;
     gap: 24px;
     width: 1167px;
-
   }
 
   h3.sectionTitle {
@@ -550,7 +546,7 @@ a {
     align-self: flex-start;
     padding-top: 54px;
     line-height: 52px;
-}
+  }
 
   .fields li {
     padding: 0;
@@ -563,7 +559,6 @@ a {
     justify-content: center;
     gap: 24px;
     text-align: left;
-
   }
 
   .contact-container > ul li {
@@ -597,7 +592,9 @@ a {
   #getintouch {
     margin-top: 0;
   }
-  .contact-container, .sectionTitle {
+
+  .contact-container,
+  .sectionTitle {
     padding: 0;
     margin: 0;
     max-width: 100%;
@@ -608,9 +605,9 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    padding: 13px 0 21px 0px;
-    border-top: 2px solid #DFE1E6;
-    }
+    padding: 13px 0px 21px 0px;
+    border-top: 2px solid #dfe1e6;
+  }
 
   .links > .socials {
     margin-top: 0;
