@@ -12,19 +12,19 @@
 **Run HTML file**
 
 ### Prerequisites
-
+- coming soon
 ### Setup
-
+- coming soon
 ### Install
-
+- coming soon
 ### Usage
-
+- coming soon
 ### Run tests
-
+- coming soon
 **pass Linters Tests**
 
 ### Deployment
-
+- coming soon
 ## Authors
 
 👤 **Kareem Magdy Wilson**
