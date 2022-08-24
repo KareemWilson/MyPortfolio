@@ -545,15 +545,12 @@ a {
 
   }
 
-
-
   h3.sectionTitle {
     font-size: 30px;
     align-self: flex-start;
     padding-top: 54px;
     line-height: 52px;
 }
-
 
   .fields li {
     padding: 0;
