@@ -14,7 +14,7 @@
 }
 
 .bg {
-  background-image: url(./utils/Header-llustration-desktop@2x.png);
+  background-image: url(./utils/welcome\ bg.svg);
   background-size: 98% 100%;
   height: 107vh;
   background-repeat: no-repeat;
@@ -23,26 +23,9 @@
   background-position-x: 37px;
 }
 
-.aboutbg1 {
-  position: absolute;
-  right: -10px;
-}
 
-.aboutbg2 {
-  position: absolute;
-  left: -10px;
-  bottom: -1610px;
-}
-
-.aboutbg1mobile {
-  display: none;
-}
-
-.aboutbg2mobile {
-  display: none;
-}
-
-/* header */
+/* header
+----------------------------------------------------------------- */
 
 .header {
   display: flex;
@@ -89,7 +72,8 @@ a {
   color: #172b4d;
 }
 
-/* the whole content */
+/* the whole content
+------------------------------------------------------------------------- */
 
 .welcome-section {
   display: flex;
@@ -142,9 +126,12 @@ a {
   color: #36b37e;
 }
 
-/* Works-Section */
+/* Works-Section
+-------------------------------------------------------------- */
 
-/* this is the grid container */
+/* this is the grid container
+------------------------------ */
+
 .sectionTitle {
   grid-column: 1/4;
   font-size: 40px;
@@ -167,7 +154,8 @@ a {
   background-color: white;
 }
 
-/* project card */
+/* project card
+----------------- */
 
 .projectCard {
   display: flex;
@@ -243,7 +231,8 @@ a {
   cursor: pointer;
 }
 
-/* About ME Section */
+/* About ME Section
+------------------------------------------------------------------------------ */
 
 .aboutme-section {
   background-image:
@@ -330,9 +319,12 @@ a {
   margin: 7px;
 }
 
-/* mobile view */
+/*
+---------------------------------------------------
+ mobile view 
+--------------------------------------------------*/
 
-@media (max-width: 710px) {
+@media (max-width: 600px) {
   .bg {
     background-image: url(./utils/header-illsutration-mobile@2x.png);
     background-size: contain;
@@ -387,7 +379,7 @@ a {
     margin-top: 50px;
   }
 
-  /* Sections section in mob view */
+  /* Sections in mob view */
   .sectionTitle {
     max-width: 70%;
   }
@@ -413,7 +405,8 @@ a {
     max-width: 88%;
   }
 
-  /* about section on mobile */
+  /* about section on mobile
+  ---------------------------- */
 
   .aboutHeader {
     margin-top: 40px;
@@ -429,7 +422,8 @@ a {
     max-width: 88%;
   }
 
-  /* contact section on mobile */
+  /* contact section on mobile
+  ------------------------------ */
 
   .contact-section {
     padding: 24px;
@@ -515,8 +509,117 @@ a {
   }
 }
 
-@media (min-width: 710px) {
+@media (min-width: 600px) {
   .fa-bars {
+    display: none;
+  }
+
+  /* contact section on desktop
+  ------------------------------ */
+
+  .contact-section {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px;
+    padding-bottom: 209px;
+    background-image:
+    url(./utils/contact\ 3.svg),
+    url(./utils/contact\ 2.svg),
+    url(./utils/contact\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: right, 503px, left;
+    background-position-y: 180px, 444px, 311px;
+
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    width: 1167px;
+
+  }
+
+
+
+  h3.sectionTitle {
+    font-size: 30px;
+    align-self: flex-start;
+    padding-top: 54px;
+    line-height: 52px;
+}
+
+
+  .fields li {
+    padding: 0;
+  }
+
+  .fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    text-align: left;
+
+  }
+
+  .contact-container > ul li {
+    list-style: none;
+    width: 100%;
+  }
+
+  .contact-container > .socials {
+    margin-top: 0;
+  }
+
+  .full-name,
+  .email {
+    border-radius: 4px;
+    border: 1px solid #d0d9d4;
+    padding: 15px;
+    width: 670px;
+    box-sizing: border-box;
+  }
+
+  .message-input {
+    max-width: 670px;
+    min-width: 670px;
+    height: 114px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #60c095;
+    border-radius: 4px;
+  }
+
+  #getintouch {
+    margin-top: 0;
+  }
+  .contact-container, .sectionTitle {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 0 21px 0px;
+    border-top: 2px solid #DFE1E6;
+    }
+
+  .links > .socials {
+    margin-top: 0;
+  }
+
+  .myemail {
     display: none;
   }
 }
