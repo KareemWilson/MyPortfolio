@@ -10,20 +10,13 @@
 ## Getting Started
 
 **Run HTML file**
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
+-Copy path of Html and paste it in browser, So you are in my Portfolio.
+-You can navigate between different sections by navBar 
+-You can send me a message for contact in the Contact section below
 
 ### Run tests
 
 **pass Linters Tests**
-
-### Deployment
 
 ## Authors
 
@@ -50,4 +43,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENCE.md) licensed.
