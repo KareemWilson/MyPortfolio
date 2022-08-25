@@ -10,21 +10,14 @@
 ## Getting Started
 
 **Run HTML file**
+-Copy path of Html and paste it in browser, So you are in my Portfolio.
+-You can navigate between different sections by navBar 
+-You can send me a message for contact in the Contact section below
 
-### Prerequisites
-- coming soon
-### Setup
-- coming soon
-### Install
-- coming soon
-### Usage
-- coming soon
 ### Run tests
-- coming soon
+
 **pass Linters Tests**
 
-### Deployment
-- coming soon
 ## Authors
 
 👤 **Kareem Magdy Wilson**
