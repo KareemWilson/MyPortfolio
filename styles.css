@@ -1,5 +1,9 @@
 @import url("https://rsms.me/inter/inter.css");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
