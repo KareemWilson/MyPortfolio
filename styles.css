@@ -113,6 +113,16 @@ a {
   margin-top: 50px;
 }
 
+div.anime {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, -20px);
+  }
+}
+
 .fa {
   justify-content: space-between;
   margin-right: 15px;
@@ -155,7 +165,6 @@ a {
 
 /* project card
 ----------------- */
-
 .projectCard {
   display: flex;
   flex-direction: column;
@@ -163,12 +172,23 @@ a {
   width: 369px;
   border: 1px solid #ebf0ee;
   border-radius: 8px;
+  transition: width 1s;
+}
+
+.projectCard:hover {
+  width: 105%;
+  border-radius: 20px;
 }
 
 .cardTop {
   flex: 1;
   background-color: #ebf0ee;
   border-radius: 8px 8px 0 0;
+  transition: border-radious 1s;
+}
+
+.cardTop:hover {
+  border-radius: 20px;
 }
 
 .cardBottom {
@@ -222,6 +242,7 @@ a {
   margin-top: 29px;
   font-size: 17px;
   font-weight: 400;
+  transition: all 0.2s;
 }
 
 .btn:hover {
