@@ -113,6 +113,16 @@ a {
   margin-top: 50px;
 }
 
+div.anime {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, -20px);
+  }
+}
+
 .fa {
   justify-content: space-between;
   margin-right: 15px;
