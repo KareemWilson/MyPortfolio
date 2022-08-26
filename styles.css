@@ -157,10 +157,7 @@ div.anime {
   justify-content: center;
   margin-bottom: 50px;
   justify-items: center;
-  
-
 }
-
 
 .section-container > * {
   background-color: white;
@@ -168,7 +165,6 @@ div.anime {
 
 /* project card
 ----------------- */
-
 .projectCard {
   display: flex;
   flex-direction: column;
@@ -176,8 +172,7 @@ div.anime {
   width: 369px;
   border: 1px solid #ebf0ee;
   border-radius: 8px;
-  transition: width, border-radius .3s;
-  width: 100%;
+  transition: width 1s;
 }
 
 .projectCard:hover {
@@ -189,7 +184,7 @@ div.anime {
   flex: 1;
   background-color: #ebf0ee;
   border-radius: 8px 8px 0 0;
-  transition: border-radious .3s;
+  transition: border-radious 1s;
 }
 
 .cardTop:hover {
@@ -247,7 +242,7 @@ div.anime {
   margin-top: 29px;
   font-size: 17px;
   font-weight: 400;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .btn:hover {
