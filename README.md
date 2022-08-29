@@ -9,6 +9,8 @@
 
 ## Getting Started
 
+**click [here](https://kareemwilson.github.io/MyPortfolio/) to open My portfolio**
+
 **Run HTML file**
 -Copy path of Html and paste it in browser, So you are in my Portfolio.
 -You can navigate between different sections by navBar 
