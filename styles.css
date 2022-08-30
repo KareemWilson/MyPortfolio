@@ -259,7 +259,8 @@ div.anime {
 ------------------------------------------------------------------------------ */
 
 .aboutme-section {
-  background-image: url(./utils/icons/aboutme1desktop.svg),
+  background-image:
+    url(./utils/icons/aboutme1desktop.svg),
     url(./utils/icons/aboutme2desktop.svg);
   background-repeat: no-repeat no-repeat;
   background-position: right bottom, left top;
@@ -361,7 +362,8 @@ mobile view
   }
 
   .aboutme-section {
-    background-image: url(./utils/icons/aboutmemobile1.svg),
+    background-image:
+      url(./utils/icons/aboutmemobile1.svg),
       url(./utils/icons/aboutme2mobile.svg);
     background-repeat: no-repeat no-repeat;
     background-position: right bottom, left top;
@@ -549,7 +551,9 @@ mobile view
     align-items: center;
     padding-top: 140px;
     padding-bottom: 209px;
-    background-image: url(./utils/contact\ 3.svg), url(./utils/contact\ 2.svg),
+    background-image:
+      url(./utils/contact\ 3.svg),
+      url(./utils/contact\ 2.svg),
       url(./utils/contact\ 1.svg);
     background-repeat: no-repeat;
     background-position: right, 261px, left;
