@@ -343,6 +343,10 @@ div.anime {
   margin: 7px;
 }
 
+.label-display-none {
+  display: none;
+}
+
 /*
 ---------------------------------------------------
 mobile view
