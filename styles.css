@@ -10,6 +10,11 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+
+.flex {
+  display: flex;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -370,10 +375,29 @@ mobile view
     justify-content: space-between;
   }
 
-  .nav-item {
+  /* .nav-item {
     display: none;
-  }
+  } */
 
+  .nav-item {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .nav-list{
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    z-index: 9999;
+    justify-content: flex-start;
+    width:100%;
+    max-width: unset;
+    align-items: flex-start;
+    line-height: 2;
+    padding-top: 58px;
+
+  }
   .logo {
     display: flex;
   }
@@ -382,6 +406,7 @@ mobile view
     display: flex;
     font-size: 18px;
     padding-top: 8px;
+    z-index: 999999;
   }
 
   ul {
