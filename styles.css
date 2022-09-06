@@ -378,13 +378,10 @@ mobile view
     justify-content: space-between;
   }
 
-  /* .nav-item {
-    display: none;
-  } */
-
   .nav-item {
     font-size: 30px;
     font-weight: 600;
+    color: #3A4A42;
   }
   .nav-list{
     display: none;
