@@ -10,6 +10,9 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+.invisible{
+  display: none;
+}
 
 .flex {
   display: flex;
@@ -403,10 +406,17 @@ mobile view
   }
 
   .fa-bars {
-    display: flex;
     font-size: 18px;
     padding-top: 8px;
     z-index: 999999;
+  }
+
+  .fa-close{
+    z-index: 999999;
+    color: #c1c7d0;
+    font-size: 18px;
+    padding-top: 8px;
+
   }
 
   ul {

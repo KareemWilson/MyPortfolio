@@ -1,15 +1,22 @@
 let mobileMenu = document.querySelector(".nav-list")
-let hamburger = document.querySelector(".fa-bars")
+let humburger = document.querySelector('.openMenu')
+let closeMenu = document.querySelectorAll(".close-menu")
+let closeBtn = document.querySelector(".fa-close")
 
-hamburger.addEventListener('click', () => {
-    if(mobileMenu.style['display'] == 'none'){
-        mobileMenu.style.setProperty('display', 'flex')
-        console.log(mobileMenu.style.display);
+const openMobileMenu = () => {
+    mobileMenu.style.display = 'block'
+    closeBtn.classList.remove('invisible')
+    humburger.classList.add("invisible")
 
-    }
-    else {
-        mobileMenu.style.setProperty('display', 'none')
-        console.log(mobileMenu.style.display);
-    }
+}
 
-})
+const closeMobileMenu = () => {
+    mobileMenu.style.display = 'none'
+    humburger.classList.remove('invisible')
+    closeBtn.classList.add("invisible")
+
+}
+
+humburger.addEventListener('click', openMobileMenu)
+closeMenu.forEach(element => element.addEventListener('click', closeMobileMenu));
+
