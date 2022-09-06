@@ -1,7 +1,7 @@
-let mobileMenu = document.querySelector(".nav-list");
-let humburger = document.querySelector(".openMenu");
-let closeMenu = document.querySelectorAll(".close-menu");
-let closeBtn = document.querySelector(".fa-close");
+const mobileMenu = document.querySelector(".nav-list");
+const humburger = document.querySelector(".openMenu");
+const closeMenu = document.querySelectorAll(".close-menu");
+const closeBtn = document.querySelector(".fa-close");
 
 const openMobileMenu = () => {
   mobileMenu.style.display = 'block';
