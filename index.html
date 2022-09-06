@@ -15,12 +15,18 @@
       <div class="bg">
         <header class="header">
           <p class="logo">Welcome</p>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#Welcome">Portofolio</a></li>
+          <ul class="nav-list nav-mobile">
+            <li class="nav-item close-menu"><a href="#works">Portofolio</a></li>
+            <li class="nav-item close-menu"><a href="#About">About</a></li>
+            <li class="nav-item close-menu"><a href="#Contact">Contact</a></li>
+          </ul>
+          <ul class="nav-list nav-desktop">
+            <li class="nav-item"><a href="#works">Portofolio</a></li>
             <li class="nav-item"><a href="#About">About</a></li>
             <li class="nav-item"><a href="#Contact">Contact</a></li>
           </ul>
-          <nav class="fa fa-bars"></nav>
+          <nav class="fa fa-bars openMenu"></nav>
+          <i class="fa fa-close close-menu invisible"></i>
         </header>
         <section id="Welcome" class="welcome-section">
           <h1 class="title">Hey there. I'm Kareem.</h1>
@@ -241,5 +247,6 @@ Enter text here</textarea
         >
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

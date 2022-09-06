@@ -10,6 +10,14 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+.invisible {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -60,6 +68,10 @@ html {
   align-items: center;
   width: 100%;
   max-width: fit-content;
+}
+
+.nav-mobile {
+  display: none;
 }
 
 li {
@@ -371,7 +383,28 @@ mobile view
   }
 
   .nav-item {
+    font-size: 30px;
+    font-weight: 600;
+    color: #3a4a42;
+  }
+
+  .nav-decktop {
     display: none;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    z-index: 9999;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: unset;
+    align-items: flex-start;
+    line-height: 2;
+    padding-top: 58px;
   }
 
   .logo {
@@ -379,8 +412,15 @@ mobile view
   }
 
   .fa-bars {
-    display: flex;
     font-size: 18px;
+    padding-top: 8px;
+    z-index: 999999;
+  }
+
+  .fa-close {
+    z-index: 999999;
+    color: #c1c7d0;
+    font-size: 28px;
     padding-top: 8px;
   }
 
@@ -534,6 +574,10 @@ mobile view
 
 @media (min-width: 600px) {
   .fa-bars {
+    display: none;
+  }
+
+  .fa-close {
     display: none;
   }
 
