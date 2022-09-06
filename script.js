@@ -1,7 +1,7 @@
-const mobileMenu = document.querySelector(".nav-list");
-const humburger = document.querySelector(".openMenu");
-const closeMenu = document.querySelectorAll(".close-menu");
-const closeBtn = document.querySelector(".fa-close");
+const mobileMenu = document.querySelector('.nav-list');
+const humburger = document.querySelector('.openMenu');
+const closeMenu = document.querySelectorAll('.close-menu');
+const closeBtn = document.querySelector('.fa-close');
 
 const openMobileMenu = () => {
   mobileMenu.style.display = 'block';
@@ -16,6 +16,4 @@ const closeMobileMenu = () => {
 };
 
 humburger.addEventListener('click', openMobileMenu);
-closeMenu.forEach((element) =>
-  element.addEventListener('click', closeMobileMenu)
-);
+closeMenu.forEach((element) => element.addEventListener('click', closeMobileMenu));
