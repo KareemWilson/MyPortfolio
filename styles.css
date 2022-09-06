@@ -569,6 +569,15 @@ mobile view
     display: none;
   }
 
+  .fa-close {
+    display: none;
+  }
+
+
+ .nav-list {
+  display: block;
+ }
+
   /* contact section on desktop
   ------------------------------ */
 
