@@ -10,7 +10,7 @@ html {
   font-family: "Inter", sans-serif;
 }
 
-.invisible{
+.invisible {
   display: none;
 }
 
@@ -381,9 +381,10 @@ mobile view
   .nav-item {
     font-size: 30px;
     font-weight: 600;
-    color: #3A4A42;
+    color: #3a4a42;
   }
-  .nav-list{
+
+  .nav-list {
     display: none;
     flex-direction: column;
     height: 100vh;
@@ -391,13 +392,13 @@ mobile view
     position: absolute;
     z-index: 9999;
     justify-content: flex-start;
-    width:100%;
+    width: 100%;
     max-width: unset;
     align-items: flex-start;
     line-height: 2;
     padding-top: 58px;
-
   }
+
   .logo {
     display: flex;
   }
@@ -408,12 +409,11 @@ mobile view
     z-index: 999999;
   }
 
-  .fa-close{
+  .fa-close {
     z-index: 999999;
     color: #c1c7d0;
     font-size: 28px;
     padding-top: 8px;
-
   }
 
   ul {
