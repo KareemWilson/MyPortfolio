@@ -22,8 +22,14 @@ const openPopUp = (proj) => {
     }
   }
 
+  const closePopUp = (event) => {
+    if (event.target == popup) {
+      popup.style.display = "none";
+      console.log(event.target);
+    }
+  };
   close.addEventListener("click", () => (popup.style.display = "none"));
-
+  window.addEventListener('click', (event) => closePopUp(event))
 };
 
 const generateProjectCard = (project) => {
@@ -62,6 +68,8 @@ const generateProjectCard = (project) => {
   projectBtn.addEventListener("click", () => {
     openPopUp(project);
   });
+
+
 };
 
 export default generateProjectCard;

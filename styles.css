@@ -570,6 +570,27 @@ mobile view
     font-size: 20px;
     color: #42526e;
   }
+
+  /* popup on mobile */
+  .popup-details {
+    width: 85%;
+  }
+
+  .techs-used {
+    justify-content: center;
+  }
+
+  .project-btns {
+    position: relative;
+    bottom: -40rem;
+    /* left: -15vw; */
+    width: 120%;
+    margin-left: -16vw;
+  }
+
+  .details-para {
+    margin-bottom: 8vh;
+  }
 }
 
 @media (min-width: 600px) {
@@ -579,6 +600,10 @@ mobile view
 
   .fa-close {
     display: none;
+  }
+
+  .popup-details {
+    width: 47%;
   }
 
   /* contact section on desktop
@@ -709,7 +734,6 @@ mobile view
   margin: auto;
   padding: 15px;
   border: 1px solid #888;
-  width: 47%;
   border-radius: 8px;
   animation-name: animitop;
   animation-duration: 0.6s;
