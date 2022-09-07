@@ -1,16 +1,30 @@
-const popup = document.querySelector(".popup");
-const closeBtn = document.querySelector(".close");
+const openPopUp = (proj) => {
+  const popup = document.querySelector(".popup");
+  const close = document.querySelector(".close");
+  const projectImg = document.querySelector(".project-img");
+  const popupTitle = document.querySelector(".popup-title");
+  const seeLive = document.querySelector("#see-live-btn");
+  const sourceBtn = document.querySelector("#source-btn");
+  const techUsed = document.querySelector(".techs-used");
+  const detailsPara = document.querySelector(".details-para");
 
-const openPopUp = () => {
+  projectImg.setAttribute("src", proj.img);
+  popupTitle.innerHTML = proj.name;
+  detailsPara.innerHTML = proj.description;
   popup.style.display = "block";
-  console.log("sjndasjl");
-};
 
-const closePopUp = (event) => {
-    if (event.target == popup) {
-      popup.style.display = "none";
+  if (techUsed.children.length == 0) {
+    for (let i = 0; i < proj.technologies.length; i++) {
+      let li = document.createElement("li");
+      li.setAttribute("class", "tech");
+      techUsed.appendChild(li);
+      li.innerHTML = li.innerHTML + proj.technologies[i];
     }
-  };
+  }
+
+  close.addEventListener("click", () => (popup.style.display = "none"));
+
+};
 
 const generateProjectCard = (project) => {
   const worksContainer = document.querySelector(".section-container");
@@ -46,12 +60,8 @@ const generateProjectCard = (project) => {
   })}`;
 
   projectBtn.addEventListener("click", () => {
-    openPopUp();
-    console.log("hi");
+    openPopUp(project);
   });
-  closeBtn.addEventListener("click", () => (popup.style.display = "none"));
-window.addEventListener("click", (event) => closePopUp(event));
-
 };
 
 export default generateProjectCard;

@@ -216,6 +216,8 @@ div.anime {
   align-items: center;
   max-height: 222px;
   border-radius: 8px;
+  width: 100%;
+
 }
 
 .cardTitle {
