@@ -1,15 +1,9 @@
-import './styles.css'
-import projectsData from './utils/data/data';
-
-
+import projectsData from "./data.js";
+import generateProjectCard from "./projectCard.js";
 
 const mobileMenu = document.querySelector(".nav-list");
 const humburger = document.querySelector(".openMenu");
 const closeMenu = document.querySelectorAll(".close-menu");
-const closeBtn = document.querySelector(".close");
-const popupBtn = document.querySelectorAll(".open-popup");
-const popup = document.querySelector(".popup");
-
 
 const openMobileMenu = () => {
   mobileMenu.style.display = "block";
@@ -28,21 +22,7 @@ closeMenu.forEach((element) =>
   element.addEventListener("click", closeMobileMenu)
 );
 
-const openPopUp = () => {
-  popup.style.display = "block";
-  console.log(popupBtn[0].id);
-};
-
-const closePopUp = (event) => {
-  if (event.target == popup) {
-    popup.style.display = "none";
-    console.log(event.target);
-  }
-};
-popupBtn.forEach((element) => element.addEventListener("click", openPopUp));
-closeBtn.addEventListener("click", () => (popup.style.display = "none"));
-window.addEventListener("click", (event) => closePopUp(event));
+// ------------------------------------
 
 
-//---------------------------------------
-
+projectsData.forEach((project) => generateProjectCard(project))
