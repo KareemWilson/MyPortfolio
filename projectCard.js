@@ -61,7 +61,7 @@ const generateProjectCard = (project) => {
 
   projectTitle.innerHTML = project.name;
   projectBtn.innerHTML = 'See Project';
-  let techList = project.technologies.forEach((techno) => {
+  const techList = project.technologies.forEach((techno) => {
     const tech = document.createElement('li');
     tech.setAttribute('class', 'tech');
     tech.innerHTML = techno;
