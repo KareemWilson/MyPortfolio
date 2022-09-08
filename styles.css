@@ -600,6 +600,7 @@ mobile view
   .project-btns-forMob .fa {
     color: white;
     font-size: 25px;
+    margin-right: 0px;
   }
 
   .popup-details .close  {
