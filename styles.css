@@ -623,7 +623,7 @@ mobile view
   }
 
   .popup-details {
-    width: 47%;
+    width: 35%;
   }
 
   .project-btns-forMob {
@@ -746,7 +746,7 @@ mobile view
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 55px;
+  padding-top: 27px;
   left: 0;
   top: 0;
   width: 100%;
@@ -767,7 +767,7 @@ mobile view
   border-radius: 8px;
   animation-name: animitop;
   animation-duration: 0.6s;
-  max-height: calc(100vh - 118px);
+  max-height: calc(100vh - 68px);
   overflow-y: auto;
 }
 
