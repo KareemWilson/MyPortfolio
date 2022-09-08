@@ -13,21 +13,21 @@ const openPopUp = (proj) => {
   detailsPara.innerHTML = proj.description;
   popup.style.display = 'block';
 
-  if (techUsed.children.length == 0) {
+  if (techUsed.children.length === 0) {
     for (let i = 0; i < proj.technologies.length; i++) {
-      let li = document.createElement('li');
+      const li = document.createElement('li');
       li.setAttribute('class', 'tech');
       techUsed.appendChild(li);
-      li.innerHTML = li.innerHTML + proj.technologies[i];
+      li.innerHTML += proj.technologies[i];
     }
   }
 
   const closePopUp = (event) => {
-    if (event.target == popup) {
+    if (event.target === popup) {
       popup.style.display = 'none';
     }
   };
-  close.addEventListener('click', () => (popup.style.display = 'none'));
+  close.addEventListener('click', () => popup.style.display = 'none');
   window.addEventListener('click', (event) => closePopUp(event))
 };
 
@@ -58,17 +58,13 @@ const generateProjectCard = (project) => {
   projectBtn.innerHTML = 'See Project';
   let techList = techUsed.innerHTML;
   techList = `${project.technologies.forEach((techno) => {
-    let tech = document.createElement('li');
+    const tech = document.createElement('li');
     tech.setAttribute('class', 'tech');
     tech.innerHTML = techno;
     techUsed.appendChild(tech);
   })}`;
 
-  projectBtn.addEventListener('click', () => {
-    openPopUp(project);
-  });
-
-
+  projectBtn.addEventListener('click', () => openPopUp(project));
 };
 
 export default generateProjectCard;

@@ -371,7 +371,7 @@ mobile view
   }
 
   .aboutme-section {
-    background-image: 
+    background-image:
       url(./utils/images/aboutmemobile1.svg),
       url(./utils/images/aboutme2mobile.svg);
     background-repeat: no-repeat no-repeat;
@@ -591,20 +591,20 @@ mobile view
     width: 100%;
     justify-content: center;
   }
-  
+
   .project-btns-forMob .btn {
-    margin-top: 0px;
+    margin-top: 0;
     width: inherit;
-    padding: 12px 0px;
+    padding: 12px 0;
   }
 
   .project-btns-forMob .fa {
     color: white;
     font-size: 25px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
-  .popup-details .close  {
+  .popup-details .close {
     position: absolute;
     color: black;
     font-size: 19px;
@@ -644,7 +644,7 @@ mobile view
     align-items: center;
     padding-top: 140px;
     padding-bottom: 209px;
-    background-image: 
+    background-image:
       url(./utils/images/contact\ 3.svg),
       url(./utils/images/contact\ 2.svg),
       url(./utils/images/contact\ 1.svg);

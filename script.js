@@ -19,10 +19,6 @@ const closeMobileMenu = () => {
 };
 
 humburger.addEventListener('click', openMobileMenu);
-closeMenu.forEach((element) =>
-  element.addEventListener('click', closeMobileMenu)
-);
-
-// ------------------------------------
+closeMenu.forEach((element) => element.addEventListener('click', closeMobileMenu));
 
 projectsData.forEach((project) => generateProjectCard(project));
