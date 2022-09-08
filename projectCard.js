@@ -3,8 +3,8 @@ const openPopUp = (proj) => {
   const close = document.querySelector('.close');
   const projectImg = document.querySelector('.project-img');
   const popupTitle = document.querySelector('.popup-title');
-  // const seeLive = document.querySelector('#see-live-btn');
-  // const sourceBtn = document.querySelector('#source-btn');
+  const seeLive = document.querySelectorAll('.see-live-btn');
+  const sourceBtn = document.querySelectorAll('.source-btn');
   const techUsed = document.querySelector('.techs-used');
   const detailsPara = document.querySelector('.details-para');
 
@@ -34,6 +34,14 @@ const openPopUp = (proj) => {
 
   close.addEventListener('click', () => byCloseBtn());
   window.addEventListener('click', (event) => closePopUp(event));
+  seeLive.forEach((ele) => ele.addEventListener('click', (event) => {
+    event.preventDefault()
+    window.location.replace(proj.linkToLive)
+  }))
+  sourceBtn.forEach((ele) => ele.addEventListener('click', (event) => {
+    event.preventDefault()
+    window.location.replace(proj.sourceLink)
+  }))
 };
 
 const generateProjectCard = (project) => {
