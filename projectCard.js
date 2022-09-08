@@ -35,13 +35,13 @@ const openPopUp = (proj) => {
   close.addEventListener('click', () => byCloseBtn());
   window.addEventListener('click', (event) => closePopUp(event));
   seeLive.forEach((ele) => ele.addEventListener('click', (event) => {
-    event.preventDefault()
-    window.location.replace(proj.linkToLive)
-  }))
+    event.preventDefault();
+    window.location.replace(proj.linkToLive);
+  }));
   sourceBtn.forEach((ele) => ele.addEventListener('click', (event) => {
-    event.preventDefault()
-    window.location.replace(proj.sourceLink)
-  }))
+    event.preventDefault();
+    window.location.replace(proj.sourceLink);
+  }));
 };
 
 const generateProjectCard = (project) => {
