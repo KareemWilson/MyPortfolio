@@ -14,7 +14,7 @@ const openPopUp = (proj) => {
   popup.style.display = 'block';
 
   if (techUsed.children.length === 0) {
-    for (let i = 0; i < proj.technologies.length; i++) {
+    for (let i = 0; i < proj.technologies.length; i+=1) {
       const li = document.createElement('li');
       li.setAttribute('class', 'tech');
       techUsed.appendChild(li);
@@ -27,8 +27,13 @@ const openPopUp = (proj) => {
       popup.style.display = 'none';
     }
   };
-  close.addEventListener('click', () => popup.style.display = 'none');
-  window.addEventListener('click', (event) => closePopUp(event))
+
+  const byCloseBtn = () => {
+    popup.style.display = 'none';
+  }
+
+  close.addEventListener('click', () => byCloseBtn());
+  window.addEventListener('click', (event) => closePopUp(event));
 };
 
 const generateProjectCard = (project) => {
