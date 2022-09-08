@@ -58,18 +58,20 @@ const generateProjectCard = (project) => {
   projectTitle.setAttribute('class', 'cardTitle');
   techUsed.setAttribute('class', 'techs');
   projectBtn.setAttribute('class', 'btn open-popup');
-
+  
+  console.log(techUsed.innerHTML.length)
   projectTitle.innerHTML = project.name;
   projectBtn.innerHTML = 'See Project';
-  let techList = project.technologies.forEach((techno) => {
-    const tech = document.createElement('li');
-    tech.setAttribute('class', 'tech');
-    tech.innerHTML = techno;
-    techUsed.appendChild(tech);
-  });
-  techList = techUsed.innerHTML;
 
+  if (techUsed.children.length === 0) {
+    for (let i = 0; i < project.technologies.length; i += 1) {
+      const li = document.createElement('li');
+      li.setAttribute('class', 'tech');
+      techUsed.appendChild(li);
+      li.innerHTML += project.technologies[i];
+    }
+  };
   projectBtn.addEventListener('click', () => openPopUp(project));
-};
+}
 
 export default generateProjectCard;
