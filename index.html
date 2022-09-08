@@ -50,85 +50,35 @@
         </section>
       </div>
       <section id="works" class="works-section">
-        <div class="section-container">
+        <div class="section-container works-container">
           <p class="sectionTitle">My Recent Works</p>
           <span class="border"></span>
-          <div class="projectCard">
-            <div class="cardTop"></div>
-            <div class="cardBottom">
-              <h2 class="cardTitle">Multi-Post Stories Gain+Glory</h2>
-              <ul class="techs">
-                <li class="tech">Ruby on Rails</li>
-                <li class="tech">CSS</li>
-                <li class="tech">Javascript</li>
-                <li class="tech">html</li>
-              </ul>
-              <button class="btn">See Project</button>
+        </div>
+        <!-- The Popup -->
+        <div class="popup">
+          <div class="popup-details">
+            <span class="close">X</span>
+            <img class="project-img" />
+            <div class="title-btns">
+              <h4 class="popup-title"></h4>
+              <div class="project-btns">
+                <button id="see-live-btn" class="btn see-live-btn">
+                See Life<span class="fa fa-check-square-o"></span>
+                </button>
+                <button class="btn source-btn">
+                See Source<span class="fa fa-github"></span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="projectCard">
-            <div class="cardTop"></div>
-            <div class="cardBottom">
-              <h2 class="cardTitle">Multi-Post Stories Gain+Glory</h2>
-              <ul class="techs">
-                <li class="tech">Ruby on Rails</li>
-                <li class="tech">CSS</li>
-                <li class="tech">Javascript</li>
-                <li class="tech">html</li>
-              </ul>
-              <button class="btn">See Project</button>
-            </div>
-          </div>
-          <div class="projectCard">
-            <div class="cardTop"></div>
-            <div class="cardBottom">
-              <h2 class="cardTitle">Multi-Post Stories Gain+Glory</h2>
-              <ul class="techs">
-                <li class="tech">Ruby on Rails</li>
-                <li class="tech">CSS</li>
-                <li class="tech">Javascript</li>
-                <li class="tech">html</li>
-              </ul>
-              <button class="btn">See Project</button>
-            </div>
-          </div>
-          <div class="projectCard">
-            <div class="cardTop"></div>
-            <div class="cardBottom">
-              <h2 class="cardTitle">Multi-Post Stories Gain+Glory</h2>
-              <ul class="techs">
-                <li class="tech">Ruby on Rails</li>
-                <li class="tech">CSS</li>
-                <li class="tech">Javascript</li>
-                <li class="tech">html</li>
-              </ul>
-              <button class="btn">See Project</button>
-            </div>
-          </div>
-          <div class="projectCard">
-            <div class="cardTop"></div>
-            <div class="cardBottom">
-              <h2 class="cardTitle">Multi-Post Stories Gain+Glory</h2>
-              <ul class="techs">
-                <li class="tech">Ruby on Rails</li>
-                <li class="tech">CSS</li>
-                <li class="tech">Javascript</li>
-                <li class="tech">html</li>
-              </ul>
-              <button class="btn">See Project</button>
-            </div>
-          </div>
-          <div class="projectCard">
-            <div class="cardTop"></div>
-            <div class="cardBottom">
-              <h2 class="cardTitle">Multi-Post Stories Gain+Glory</h2>
-              <ul class="techs">
-                <li class="tech">Ruby on Rails</li>
-                <li class="tech">CSS</li>
-                <li class="tech">Javascript</li>
-                <li class="tech">html</li>
-              </ul>
-              <button class="btn">See Project</button>
+            <ul class="techs-used"></ul>
+            <p class="details-para"></p>
+            <div class="project-btns-forMob">
+              <button id="see-live-btn" class="btn see-live-btn">
+                See Live<span class="fa fa-check-square-o"></span>
+              </button>
+              <button class="btn source-btn">
+                See Source<span class="fa fa-github"></span>
+              </button>
             </div>
           </div>
         </div>
@@ -146,7 +96,7 @@
               <button class="resumeBtn">Get My Reusme</button>
             </div>
             <div class="technologyCard">
-              <img src="./utils/languages.png" alt="" class="cardImg" />
+              <img src="./utils/images/languages.png" alt="" class="cardImg" />
               <h2 class="cardTitle">Languages</h2>
               <ul class="list">
                 <li class="listItem">Javascript</li>
@@ -156,7 +106,7 @@
               </ul>
             </div>
             <div class="technologyCard">
-              <img src="./utils/frameworks.png" alt="" class="cardImg" />
+              <img src="./utils/images/frameworks.png" alt="" class="cardImg" />
               <h2 class="cardTitle">Frameworks</h2>
               <ul class="list">
                 <li class="listItem">Bootstrap</li>
@@ -167,7 +117,7 @@
               </ul>
             </div>
             <div class="technologyCard">
-              <img src="./utils/skills.png" alt="" class="cardImg" />
+              <img src="./utils/images/skills.png" alt="" class="cardImg" />
               <h2 class="cardTitle">Skills</h2>
               <ul class="list">
                 <li class="listItem">Codekit</li>
@@ -247,6 +197,6 @@ Enter text here</textarea
         >
       </footer>
     </div>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

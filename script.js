@@ -1,3 +1,6 @@
+import projectsData from './data.js';
+import generateProjectCard from './projectCard.js';
+
 const mobileMenu = document.querySelector('.nav-list');
 const humburger = document.querySelector('.openMenu');
 const closeMenu = document.querySelectorAll('.close-menu');
@@ -17,3 +20,5 @@ const closeMobileMenu = () => {
 
 humburger.addEventListener('click', openMobileMenu);
 closeMenu.forEach((element) => element.addEventListener('click', closeMobileMenu));
+
+projectsData.forEach((project) => generateProjectCard(project));
