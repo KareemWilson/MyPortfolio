@@ -581,16 +581,35 @@ mobile view
   }
 
   .project-btns {
-    position: relative;
-    bottom: -40rem;
-    /* left: -15vw; */
-    width: 120%;
-    margin-left: -16vw;
+    display: none;
   }
 
-  .details-para {
-    margin-bottom: 8vh;
+  .project-btns-forMob {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
   }
+  
+  .project-btns-forMob .btn {
+    margin-top: 0px;
+    width: inherit;
+    padding: 12px 0;
+  }
+
+  .project-btns-forMob .fa {
+    color: white;
+    font-size: 25px;
+  }
+
+  .popup-details .close  {
+    position: absolute;
+    color: black;
+    font-size: 19px;
+    font-weight: 700;
+    background: none;
+  }
+
 }
 
 @media (min-width: 600px) {
@@ -604,6 +623,14 @@ mobile view
 
   .popup-details {
     width: 47%;
+  }
+
+  .project-btns-forMob {
+    display: none;
+  }
+
+  .popup-details .close {
+    background-color: #EBECF0;
   }
 
   /* contact section on desktop
@@ -755,13 +782,11 @@ mobile view
 .popup-details .close {
   align-self: flex-end;
   text-align: center;
-  background-color: #EBECF0;
   padding: 12px;
   border-radius: 8px;
   padding-left: 15px;
   padding-right: 15px;
   cursor: pointer;
-  transform: 0.3s;
 }
 
 .popup-details::-webkit-scrollbar {
