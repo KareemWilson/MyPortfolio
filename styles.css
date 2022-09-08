@@ -606,7 +606,7 @@ mobile view
 
   .popup-details .close {
     position: absolute;
-    color: black;
+    color: rgb(213, 178, 178);
     font-size: 19px;
     font-weight: 700;
     background: none;

@@ -61,13 +61,13 @@ const generateProjectCard = (project) => {
 
   projectTitle.innerHTML = project.name;
   projectBtn.innerHTML = 'See Project';
-  const techList = project.technologies.forEach((techno) => {
+  let techList = project.technologies.forEach((techno) => {
     const tech = document.createElement('li');
     tech.setAttribute('class', 'tech');
     tech.innerHTML = techno;
     techUsed.appendChild(tech);
   });
-  techUsed.innerHTML = techList;
+  techList = techUsed.innerHTML;
 
   projectBtn.addEventListener('click', () => openPopUp(project));
 };
