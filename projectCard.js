@@ -58,8 +58,7 @@ const generateProjectCard = (project) => {
   projectTitle.setAttribute('class', 'cardTitle');
   techUsed.setAttribute('class', 'techs');
   projectBtn.setAttribute('class', 'btn open-popup');
-  
-  console.log(techUsed.innerHTML.length)
+
   projectTitle.innerHTML = project.name;
   projectBtn.innerHTML = 'See Project';
 
@@ -70,8 +69,8 @@ const generateProjectCard = (project) => {
       techUsed.appendChild(li);
       li.innerHTML += project.technologies[i];
     }
-  };
+  }
   projectBtn.addEventListener('click', () => openPopUp(project));
-}
+};
 
 export default generateProjectCard;
