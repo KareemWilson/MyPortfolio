@@ -44,29 +44,32 @@ const showError = () => {
   }
   else if(email.validity.typeMismatch){
     error.textContent = 'You should enter email address'
+    if(upperCaseCheck()){
+      error.textContent = 'your Email should be in lowercase'
+    }
   }
   if(upperCaseCheck()){
     error.textContent = 'your Email should be in lowercase'
   }
+  
 
   error.className = 'error active'
 }
 
 
 email.addEventListener('input', () => {
-  if(email.validity.valid){
+  if(email.validity.valid && !upperCaseCheck() ) {
     error.textContent = ''
     error.className = 'error'
   }
   else {
     showError()
   }
-  console.log(email.value);
-  console.log(upperCaseCheck());
+
 })
 
 form.addEventListener('submit', (event) => {
-  if(!email.validity.valid){
+  if(!email.validity.valid || upperCaseCheck()){
     showError()
     event.preventDefault()
   }
