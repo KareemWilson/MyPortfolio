@@ -38,7 +38,6 @@ const upperCaseCheck = () => {
 }
 
 const showError = () => {
-  
   if(email.validity.valueMissing){
     error.textContent = 'You should type your mail'
   }
@@ -51,11 +50,8 @@ const showError = () => {
   if(upperCaseCheck()){
     error.textContent = 'your Email should be in lowercase'
   }
-  
-
   error.className = 'error active'
 }
-
 
 email.addEventListener('input', () => {
   if(email.validity.valid && !upperCaseCheck() ) {
@@ -65,7 +61,6 @@ email.addEventListener('input', () => {
   else {
     showError()
   }
-
 })
 
 form.addEventListener('submit', (event) => {
@@ -73,5 +68,4 @@ form.addEventListener('submit', (event) => {
     showError()
     event.preventDefault()
   }
-  
 })
