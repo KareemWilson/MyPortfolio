@@ -19,21 +19,18 @@ const closeMobileMenu = () => {
 };
 
 humburger.addEventListener('click', openMobileMenu);
-closeMenu.forEach((element) =>
-  element.addEventListener('click', closeMobileMenu)
-);
-
+closeMenu.forEach((element) => element.addEventListener('click', closeMobileMenu));
 projectsData.forEach((project) => generateProjectCard(project));
 
 const form = document.querySelector('#contact');
 const email = document.querySelector('#mail');
 const error = document.querySelector('#mail + .error');
 const upperCaseCheck = () => {
-  if (email.value != email.value.toLowerCase()) {
+  if (email.value !== email.value.toLowerCase()) {
     return true;
-  } else {
-    return false;
   }
+    return false;
+  
 };
 
 const showError = () => {
