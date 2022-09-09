@@ -29,8 +29,7 @@ const upperCaseCheck = () => {
   if (email.value !== email.value.toLowerCase()) {
     return true;
   }
-    return false;
-  
+  return false;
 };
 
 const showError = () => {
