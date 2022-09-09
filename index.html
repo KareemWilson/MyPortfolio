@@ -144,12 +144,17 @@
           </h3>
           <ul class="fields">
             <li>
-              <input class="full-name" placeholder="Full Name" type="text" />
+              <input
+                id="fullName"
+                class="full-name form-input"
+                placeholder="Full Name"
+                type="text"
+              />
             </li>
             <li>
               <input
                 id="mail"
-                class="email"
+                class="email form-input"
                 placeholder="Email address"
                 type="email"
                 required
@@ -158,10 +163,10 @@
             </li>
             <li>
               <textarea
-                class="message-input"
+                class="message-input form-input"
                 maxlength="500"
                 name="message"
-                id="msg"
+                id="message"
                 required
               >
 Enter text here</textarea
