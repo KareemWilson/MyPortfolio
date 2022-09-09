@@ -19,53 +19,50 @@ const closeMobileMenu = () => {
 };
 
 humburger.addEventListener('click', openMobileMenu);
-closeMenu.forEach((element) => element.addEventListener('click', closeMobileMenu));
+closeMenu.forEach((element) =>
+  element.addEventListener('click', closeMobileMenu)
+);
 
 projectsData.forEach((project) => generateProjectCard(project));
 
-
-//-----------------------------------------
-const form = document.querySelector('#contact')
-const email = document.querySelector('#mail')
-const error = document.querySelector('#mail + .error')
+const form = document.querySelector('#contact');
+const email = document.querySelector('#mail');
+const error = document.querySelector('#mail + .error');
 const upperCaseCheck = () => {
-  if(email.value != email.value.toLowerCase()){
-    return true
+  if (email.value != email.value.toLowerCase()) {
+    return true;
+  } else {
+    return false;
   }
-  else{
-    return false
-  }
-}
+};
 
 const showError = () => {
-  if(email.validity.valueMissing){
-    error.textContent = 'You should type your mail'
-  }
-  else if(email.validity.typeMismatch){
-    error.textContent = 'You should enter email address'
-    if(upperCaseCheck()){
-      error.textContent = 'your Email should be in lowercase'
+  if (email.validity.valueMissing) {
+    error.textContent = 'You should type your mail';
+  } else if (email.validity.typeMismatch) {
+    error.textContent = 'You should enter email address';
+    if (upperCaseCheck()) {
+      error.textContent = 'your Email should be in lowercase';
     }
   }
-  if(upperCaseCheck()){
-    error.textContent = 'your Email should be in lowercase'
+  if (upperCaseCheck()) {
+    error.textContent = 'your Email should be in lowercase';
   }
-  error.className = 'error active'
-}
+  error.className = 'error active';
+};
 
 email.addEventListener('input', () => {
-  if(email.validity.valid && !upperCaseCheck() ) {
-    error.textContent = ''
-    error.className = 'error'
+  if (email.validity.valid && !upperCaseCheck()) {
+    error.textContent = '';
+    error.className = 'error';
+  } else {
+    showError();
   }
-  else {
-    showError()
-  }
-})
+});
 
 form.addEventListener('submit', (event) => {
-  if(!email.validity.valid || upperCaseCheck()){
-    showError()
-    event.preventDefault()
+  if (!email.validity.valid || upperCaseCheck()) {
+    showError();
+    event.preventDefault();
   }
-})
+});
