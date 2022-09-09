@@ -132,10 +132,11 @@
       </div>
       <section id="Contact" class="contact-section">
         <form
+          id="contact"
           method="post"
           action="https://formspree.io/f/mayknqrv"
           class="contact-container"
-        >
+          novalidate>
           <h3 class="sectionTitle">
             I'm always interested in hearing about new projects, so if you'd
             like to chat please get in touch.
@@ -146,17 +147,17 @@
                 class="full-name"
                 placeholder="Full Name"
                 type="text"
-                required
-                maxlength="30"
               />
             </li>
             <li>
               <input
+                id="mail"
                 class="email"
                 placeholder="Email address"
                 type="email"
                 required
               />
+              <span class="error" aria-live="polite"></span>
             </li>
             <li>
               <textarea
