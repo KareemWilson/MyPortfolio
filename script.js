@@ -19,9 +19,8 @@ const closeMobileMenu = () => {
 };
 
 humburger.addEventListener('click', openMobileMenu);
-closeMenu.forEach((element) =>
-  element.addEventListener('click', closeMobileMenu)
-);
+closeMenu.forEach((element) => element.addEventListener('click', closeMobileMenu));
+
 projectsData.forEach((project) => generateProjectCard(project));
 
 const form = document.querySelector('#contact');
@@ -76,7 +75,6 @@ email.addEventListener('input', () => {
 });
 
 const fillInputsFromLocalStorage = () => {
-  console.log(localStorage);
   name.value = formData.fullName;
   email.value = formData.mail;
   msg.value = formData.message;
