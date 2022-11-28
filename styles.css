@@ -185,20 +185,19 @@ div.anime {
   display: flex;
   flex-direction: column;
   height: 474px;
-  width: 369px;
+  width: 400px;
   border: 1px solid #ebf0ee;
   border-radius: 8px;
   transition: width 1s;
 }
 
 .projectCard:hover {
-  width: 105%;
-  border-radius: 20px;
+  width: 450px;
+  border-radius: 30px;
 }
 
 .cardTop {
   flex: 1;
-  background-color: #ebf0ee;
   border-radius: 8px 8px 0 0;
   transition: border-radious 1s;
 }
@@ -220,7 +219,7 @@ div.anime {
 }
 
 .cardTitle {
-  max-width: 70%;
+  max-width: 90%;
   margin: 16px;
   color: #172b4d;
   font-weight: 600;

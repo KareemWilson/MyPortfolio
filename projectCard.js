@@ -47,7 +47,7 @@ const openPopUp = (proj) => {
 const generateProjectCard = (project) => {
   const worksContainer = document.querySelector('.section-container');
   const projectCard = document.createElement('div');
-  const cardTop = document.createElement('div');
+  const cardTop = document.createElement('img');
   const cardBottom = document.createElement('div');
   const projectTitle = document.createElement('h3');
   const techUsed = document.createElement('ul');
@@ -62,6 +62,7 @@ const generateProjectCard = (project) => {
 
   projectCard.setAttribute('class', 'projectCard');
   cardTop.setAttribute('class', 'cardTop');
+  cardTop.setAttribute('src', project.img);
   cardBottom.setAttribute('class', 'cardBottom');
   projectTitle.setAttribute('class', 'cardTitle');
   techUsed.setAttribute('class', 'techs');
