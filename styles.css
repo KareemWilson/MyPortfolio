@@ -200,6 +200,7 @@ div.anime {
   flex: 1;
   border-radius: 8px 8px 0 0;
   transition: border-radious 1s;
+  max-height: 17rem;
 }
 
 .cardTop:hover {
@@ -314,7 +315,7 @@ div.anime {
 
 .technologyCard {
   display: flex;
-  height: 352px;
+  height: 25rem;
   width: 369px;
   border: 1px solid #c1c7d0;
   background-color: #ebf0ee;

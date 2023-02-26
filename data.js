@@ -40,13 +40,13 @@ const projectsData = [
   },
   {
     id: '5',
-    name: 'BookStore',
+    name: 'Money Minder',
     description:
-      '"Bookstore" is a website for all readers. It is a Single Page App (SPA) that allows users to: 1) Add Books, 2) Remove them',
-    img: './utils/bookstore.png',
-    technologies: ['React.js', 'JavaScript', 'Linters', 'Jest'],
-    linkToLive: 'https://github.com/KareemWilson/BookStore',
-    sourceLink: 'https://github.com/KareemWilson/BookStore',
+      'A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    img: './utils/money-minder.png',
+    technologies: ['Ruby', 'Rails', 'CSS', 'Bootstrap'],
+    linkToLive: 'https://money-minder-eilx.onrender.com/',
+    sourceLink: 'https://github.com/KareemWilson/money-minder',
   },
   {
     id: '6',
